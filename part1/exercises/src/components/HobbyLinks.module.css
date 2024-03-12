@@ -1,0 +1,19 @@
+.hobbyText {
+   text-align: right;
+}
+
+ul{
+   list-style: none;
+}
+
+
+.hobbyText a {
+   color: rgb(51, 151, 126);
+   font-size: 24px;
+}
+
+.hobbyHeading {
+   color: rgb(69, 201, 74);
+   text-align: right;
+   font-size: 36px;
+}

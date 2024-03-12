@@ -1,0 +1,26 @@
+.container {
+   border: 2px solid #222;
+   width: 680px;
+   margin: 0 auto;
+   background-color: rgb(41, 100, 63);
+}
+
+.bookHeading {
+ text-align: center;
+ padding-left: 50px;
+}
+
+ul.bookList {
+   display: flex;
+   width: 600px;
+   margin: 0 auto;
+   padding: 0;
+   margin: 0;
+}
+
+ul.bookList li{
+   padding: 5px;
+}
+.bookList img {
+   height: 300px;
+}
