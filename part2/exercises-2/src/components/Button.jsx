@@ -1,8 +1,9 @@
 import './styles.css';
 
-function Button() {
+function Button(props) {
+
    const onLearnMore = () =>{
-      alert('Slipsh Splash')
+      alert(`Slipsh Splash ${props.name}`)
    }
    return ( 
          <button onClick={onLearnMore}>

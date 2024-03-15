@@ -15,7 +15,7 @@ function Profile()
             <li>{ocean.fact1}</li>
             <li>{ocean.fact1}</li>
          </ul>
-         <Button />
+         <Button name={ocean.name}/>
       </div>
    ))
 
