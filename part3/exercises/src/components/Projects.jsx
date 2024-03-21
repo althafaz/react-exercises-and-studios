@@ -1,31 +1,36 @@
-import data from '../data.json';
-import { useState } from 'react';
+import {useState} from 'react'
+import data from '../data.json'
 
 export default function MyProjects() {
-   const [index, setIndex] = useState(0);
+    
+    const [index, setIndex] = useState(0)
 
-  function handleClick() {
-   if (index < data.projects.length-1)
-   {
-      setIndex(index + 1);
-   }
-   else
-   {
-      setIndex(0);
-   }
-  }
+    const projectsList = data['Projects']
 
-  let projects = data.projects;
-  let project = projects[index];
+    const displayItems = (index) => {
+        const el = projectsList[index]
+        return (
+            <li key={index}>
+                <div>
+                    <h3>{el.name}</h3>
+                    <p>{el.location}</p>
+                    <img src={el.photoUrl} alt={el.alt}  width={600}/>
+                </div>
+            </li>
+        )
+    }
 
-  return (
+    const handleClick = () =>{
+        (index < data['Projects'].length-1) ? setIndex(index+1) : setIndex(0)
+    }
+
+    console.log(index, projectsList[index])
+    return (
     <div>
-      <button onClick={handleClick}>
-        Next
-      </button>
-      <h2>{project.canvas} by {project.designer}
-      </h2>
-      <img src={project.photoUrl} alt={project.alt} />
+        <button onClick={()=>handleClick()}>Next</button>
+        <ul>
+            {displayItems(index)}
+        </ul>
     </div>
-  );
+  )
 }
