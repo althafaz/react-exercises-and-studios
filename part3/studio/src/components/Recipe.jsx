@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.marthastewart.com/author/riley-wofford";
+   let authorPhoto = "https://www.marthastewart.com/thmb/3VpFlZYrWr5vjKa19YsmYB6Ois4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/riley-wofford-2018-81632856279842519548bc607969b36f.jpg";
+   let authorName = "Riley Wofford";
 
    return (
       <div>
@@ -17,7 +17,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [' cream cheese','creamy blue cheese','Kosher salt','ground pepper'];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -26,7 +26,6 @@ const RecipeIngredients = () => {
             <li>{ingredients[1]}</li>
             <li>{ingredients[2]}</li>
             <li>{ingredients[3]}</li>
-            <li>{ingredients[4]}</li>
          </ul>
       </div>
    );
@@ -36,8 +35,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Blue-Cheese Spread</h1>
+            <p>So easy to make yet special enough for your next cocktail hour or dinner party appetizer, all you need for this Blue-Cheese Spread is two ingredients, cream cheese and a creamy blue cheese such as Roquefort. Whizz them together in the food processor to create a smooth, spreadable consistency then season with salt and pepper and you're ready to serve.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +48,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.marthastewart.com/thmb/0KzrF7XHyLy0nc3b1rH8OXUVgjo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blue-cheese-spread-5f52tzs8k898ambf8d1d3j-0622_horiz-782ec0cc2ea946efacfb819d369ea9cd.jpgitok2PdiqftD" alt="Blue-Cheese Spread" className="imageUpdates"/>
    );
 }
 
